@@ -30,12 +30,12 @@ ifeq ($(TYPE_IMAGE), DEBUG_RUN)
 IMAGE_TYPE=debug
 OUTPUT_SUFFIX=hex
 DEBUGGABLE_SUFFIX=elf
-FINAL_IMAGE=${DISTDIR}/EJERCICIO_2.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+FINAL_IMAGE=${DISTDIR}/Parcial_2_Ejercicio_2_uC.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
 else
 IMAGE_TYPE=production
 OUTPUT_SUFFIX=hex
 DEBUGGABLE_SUFFIX=elf
-FINAL_IMAGE=${DISTDIR}/EJERCICIO_2.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+FINAL_IMAGE=${DISTDIR}/Parcial_2_Ejercicio_2_uC.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
 endif
 
 ifeq ($(COMPARE_BUILD), true)
@@ -88,10 +88,10 @@ FIXDEPS=fixDeps
 ifneq ($(INFORMATION_MESSAGE), )
 	@echo $(INFORMATION_MESSAGE)
 endif
-	${MAKE}  -f nbproject/Makefile-default.mk ${DISTDIR}/EJERCICIO_2.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+	${MAKE}  -f nbproject/Makefile-default.mk ${DISTDIR}/Parcial_2_Ejercicio_2_uC.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
 
 MP_PROCESSOR_OPTION=PIC18F57Q84
-FINAL_IMAGE_NAME_MINUS_EXTENSION=${DISTDIR}/EJERCICIO_2.X.${IMAGE_TYPE}
+FINAL_IMAGE_NAME_MINUS_EXTENSION=${DISTDIR}/Parcial_2_Ejercicio_2_uC.X.${IMAGE_TYPE}
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: pic-as-assembler
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
@@ -117,16 +117,16 @@ endif
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: pic-as-linker
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${DISTDIR}/EJERCICIO_2.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk    
+${DISTDIR}/Parcial_2_Ejercicio_2_uC.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk    
 	@${MKDIR} ${DISTDIR} 
 	${MP_LD} -mcpu=PIC18F57Q84 ${OBJECTFILES_QUOTED_IF_SPACED} \
-	-o ${DISTDIR}/EJERCICIO_2.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX} \
+	-o ${DISTDIR}/Parcial_2_Ejercicio_2_uC.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX} \
 	 -D__DEBUG=1  -misa=std -msummary=+mem,-psect,-class,-hex,-file,-sha1,-sha256,-xml,-xmlfull -Wl,-presetVect=0h,-pISRVectHighPriority=08h,-pISRVectLowPriority=018h -mcallgraph=std -Wl,-Map=${FINAL_IMAGE_NAME_MINUS_EXTENSION}.map -mno-download-hex
 else
-${DISTDIR}/EJERCICIO_2.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk   
+${DISTDIR}/Parcial_2_Ejercicio_2_uC.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk   
 	@${MKDIR} ${DISTDIR} 
 	${MP_LD} -mcpu=PIC18F57Q84 ${OBJECTFILES_QUOTED_IF_SPACED} \
-	-o ${DISTDIR}/EJERCICIO_2.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX} \
+	-o ${DISTDIR}/Parcial_2_Ejercicio_2_uC.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX} \
 	 -misa=std -msummary=+mem,-psect,-class,-hex,-file,-sha1,-sha256,-xml,-xmlfull -Wl,-presetVect=0h,-pISRVectHighPriority=08h,-pISRVectLowPriority=018h -mcallgraph=std -Wl,-Map=${FINAL_IMAGE_NAME_MINUS_EXTENSION}.map -mno-download-hex
 endif
 

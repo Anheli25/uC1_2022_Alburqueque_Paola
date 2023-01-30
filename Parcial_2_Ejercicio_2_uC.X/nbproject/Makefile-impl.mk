@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=EJERCICIO_2.X
+PROJECTNAME=Parcial_2_Ejercicio_2_uC.X
 
 # Active Configuration
 DEFAULTCONF=default

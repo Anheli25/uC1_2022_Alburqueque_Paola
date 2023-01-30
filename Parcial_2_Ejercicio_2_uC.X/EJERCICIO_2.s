@@ -230,14 +230,14 @@ PSECT resetVect,class=CODE,reloc=2
     TABLE_G:
       ADDWF   PCL,1,0
       RETLW   01111110B	; offset: 0
-      RETLW   10111101B	; offset: 1
-      RETLW   11011011B	; offset: 2
-      RETLW   11100111B	; offset: 3
+      RETLW   00111100B	; offset: 1
+      RETLW   00011000B	; offset: 2
+      RETLW   00000000B	; offset: 3
       RETLW   11111111B	; offset: 4
       RETLW   11100111B	; offset: 5
-      RETLW   11011011B	; offset: 6
-      RETLW   10111101B	; offset: 7
-      RETLW   01111110B	; offset: 8
+      RETLW   11000011B	; offset: 6
+      RETLW   10000001B	; offset: 7
+      RETLW   00000000B	; offset: 8
       RETLW   11111111B	; offset: 9
       
       ///DELAY///
