@@ -33,5 +33,14 @@ Este programa permite mostrar en un display de 7 segmentos (ánodo común) los v
 La conexión hacia los pines será utilizando el puerto D <7:0>.
 Si el botón de la placa no está presionado muestra los valores del 0-9, pero si se mantiene presionado muestra las letras A-F.
 El retardo entre cada transición es de 1 segundo.
+
+> **PARCIAL 2**
+*"EP_EJERCICIO_2"* 
+>  - [ ] E2-Corrimiento_Leds
+ Este programa permite  ejecutar una secuencia de leds, desde los bits que se encuentran en los extremos hasta el centro y viceversa, contando cada par de estos como 1 repetición de secuencia. Para activarla se debe presionar el pulsador RA3, para capturar el momento el pulsador RB4 y para apagar la secuencia y reiniciarla se utiliza el pulsador RF2. Además mientras no se ejecute ninguna interrupción el led de la placa (RF3) tendrá un toggle de 500ms y la secuencia en caso de no ser apagada tendrá su fin al contar cinco repeticiones de la secuencia antes mencionada.
+  > - Especificaciones:
+  RA3: Interrupción de baja prioridad.
+  RB4: Interrupción de baja prioridad.
+  RF2: Interrupción de alta prioridad.
 --------------------------------------------------------------
 **Universidad Nacional De Piura**
